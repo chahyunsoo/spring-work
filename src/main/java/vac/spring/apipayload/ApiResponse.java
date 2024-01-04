@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import vac.spring.apipayload.code.BaseCode;
+import vac.spring.apipayload.code.status.SuccessStatus;
 
 @Getter
 @AllArgsConstructor
