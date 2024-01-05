@@ -1,6 +1,9 @@
 package vac.spring.domain;
 
 import lombok.*;
+import org.hibernate.annotations.ColumnDefault;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
 import vac.spring.domain.common.BaseEntity;
 import vac.spring.domain.enums.Gender;
 import vac.spring.domain.enums.MemberStatus;
@@ -16,7 +19,8 @@ import java.util.List;
 
 @Entity
 @Getter
-@Setter
+@DynamicInsert
+@DynamicUpdate
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
@@ -50,6 +54,7 @@ public class Member extends BaseEntity {
 //    @Column(nullable = false, length = 50)
     private String email;
 
+    @ColumnDefault("0")
     private Integer point;
 
     @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
