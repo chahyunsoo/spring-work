@@ -6,6 +6,7 @@ import vac.spring.web.dto.MemberRequestDto;
 import vac.spring.web.dto.MemberResponseDto;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 
 public class MemberConverter {
     public static MemberResponseDto.JoinResultDto toJoinResultDto(Member member) {
@@ -30,5 +31,12 @@ public class MemberConverter {
                 break;
         }
 
+        return Member.builder()
+                .address(request.getAddress())
+                .specAddress(request.getSpecAddress())
+                .gender(gender)
+                .name(request.getName())
+                .memberPreferList(new ArrayList<>())
+                .build();
     }
 }
