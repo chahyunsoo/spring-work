@@ -16,7 +16,7 @@ public class MemberRequestDto {
         @NotNull
         Integer genderr;
         @NotNull
-        Integer birthYear;
+        Integer birthYearr;
         @NotNull
         Integer birthMonth;
         @NotNull
