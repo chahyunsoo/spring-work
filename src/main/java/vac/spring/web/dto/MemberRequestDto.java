@@ -20,7 +20,7 @@ public class MemberRequestDto {
         @NotNull
         Integer birthMonthr;
         @NotNull
-        Integer birthDay;
+        Integer birthDayyy;
         @Size(min = 5, max = 12)
         String address;
         @Size(min = 5, max = 12)
