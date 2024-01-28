@@ -18,9 +18,9 @@ public class MemberRequestDto {
         @NotNull
         Integer birthYear;
         @NotNull
-        Integer birthMonth;
+        Integer birthMonthr;
         @NotNull
-        Integer birthDayy;
+        Integer birthDayyy;
         @Size(min = 5, max = 12)
         String address;
         @Size(min = 5, max = 12)
