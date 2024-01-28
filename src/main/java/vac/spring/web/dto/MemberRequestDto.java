@@ -12,11 +12,11 @@ public class MemberRequestDto {
     @Getter
     public static class JoinDto {
         @NotBlank
-        String namee;
+        String name;
         @NotNull
-        Integer genderr;
+        Integer gender;
         @NotNull
-        Integer birthYearr;
+        Integer birthYear;
         @NotNull
         Integer birthMonth;
         @NotNull
