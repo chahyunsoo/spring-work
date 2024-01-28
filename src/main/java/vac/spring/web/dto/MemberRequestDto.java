@@ -12,7 +12,7 @@ public class MemberRequestDto {
     @Getter
     public static class JoinDto {
         @NotBlank
-        String name;
+        String namer;
         @NotNull
         Integer gender;
         @NotNull
