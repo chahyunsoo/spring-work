@@ -14,7 +14,7 @@ public class MemberRequestDto {
         @NotBlank
         String namee;
         @NotNull
-        Integer gender;
+        Integer genderr;
         @NotNull
         Integer birthYear;
         @NotNull
