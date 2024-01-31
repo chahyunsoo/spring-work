@@ -2,6 +2,7 @@ package vac.spring.apipayload.code.status;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import org.springframework.boot.web.embedded.undertow.UndertowServletWebServer;
 import org.springframework.http.HttpStatus;
 import vac.spring.apipayload.code.BaseErrorCode;
 import vac.spring.apipayload.code.ErrorReasonDto;
@@ -30,10 +31,11 @@ public enum ErrorStatus implements BaseErrorCode {
     TEMP_EXCEPTION(HttpStatus.BAD_REQUEST, "TEMP4001", "이거는 테스트"),
 
     // FoodCategory Error
-    FOOD_CATEGORY_NOT_FOUND(HttpStatus.NOT_FOUND, "FOOD_CATEGORY4001", "음식 카테고리가 없습니다.");
+    FOOD_CATEGORY_NOT_FOUND(HttpStatus.NOT_FOUND, "FOOD_CATEGORY4001", "음식 카테고리가 없습니다."),
 
-//    STORE_NOT_FOUND(HttpStatus.NOT_FOUND, "STORE_4001","가게가 없습니다.");
+    STORE_NOT_FOUND(HttpStatus.NOT_FOUND, "STORE_4001","가게가 없습니다."),
 
+    USER_NOT_FOUND(HttpStatus.NOT_FOUND, "STORE_4001","가게가 없습니다.");
 
     private final HttpStatus httpStatus;
     private final String code;
